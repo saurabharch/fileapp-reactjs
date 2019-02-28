@@ -3,12 +3,12 @@
 ### Installation
 
 ```
-git clone https://github.com/tabvn/fileapp-reactjs.git fileapp
+git clone https://github.com/saurabharch/fileapp-reactjs.git && cd fileapp-reactjs
 
 ```
 
 ```
-cd fileapp/api
+cd api
 
 ```
 ``` 
