@@ -8,7 +8,9 @@
     "build": "babel src -s -D -d dist --presets env,stage-0",
     "start": "node dist",
     "prestart": "npm run -s build",
-    "test": "eslint src"
+    "test": "eslint src",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -38,7 +40,8 @@
     "morgan": "^1.9.0",
     "multer": "^1.3.0",
     "multer-s3": "^2.7.0",
-    "nodemailer": "^4.3.1"
+    "nodemailer": "^4.3.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -47,5 +50,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.9.0",
     "nodemon": "^1.12.1"
-  }
+  },
+  "snyk": true
 }
